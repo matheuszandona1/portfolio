@@ -2,7 +2,6 @@ body {
   margin: 0px;
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;
-  margin-bottom: 1000px;
 }
 
 h1,
@@ -21,6 +20,7 @@ ul {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 .subtitulo {
@@ -54,4 +54,14 @@ img {
   max-width: 40ch;
   margin-bottom: 60px;
   color: #525252;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato {
+    font-size: 1.5rem;
+  }
 }
